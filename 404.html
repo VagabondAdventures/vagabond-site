@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vagabond Adventures</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script>
+(function(){
+  var M={"winter-adventures":"finder-a","georgia-holiday-packages":"trip-holiday","guided-freeriding-package-in-gudauri":"trip-freeride",
+    "cat-skiing-trips-in-goderdzi-georgia":"trip-goderdzi","backcountry-ski-svaneti":"trip-svaneti","ultimate-ski-safari":"trip-safari",
+    "gudauri":"gudauri-guide","about":"about","contact":"contact","terms-conditions":"terms","privacy-policy":"privacy","trip-agreement-form":"trip-agreement"};
+  var p=location.pathname,base="/";
+  if(p.indexOf("/vagabond-site/")===0){base="/vagabond-site/";p=p.slice(base.length-1)}
+  var k=p.replace(/^\/+|\/+$/g,"").split("/")[0].toLowerCase();
+  location.replace(base+(M[k]?"#"+M[k]:""));
+})();
+</script>
+<style>body{font-family:system-ui,sans-serif;background:#edf0f1;color:#14181a;display:grid;place-items:center;min-height:100vh;margin:0;text-align:center}a{color:inherit}</style>
+</head>
+<body><p>Taking you to <a href="/">Vagabond Adventures</a>…</p></body>
+</html>
